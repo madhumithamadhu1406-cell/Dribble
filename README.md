@@ -27,50 +27,21 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dribbble Clone</title>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-    .navbar {
-      background-color: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #369af8, #a4d9fa);
-      color: white;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    .card img {
-      border-radius: 10px;
-    }
-    footer {
-      background-color: #55aafe;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
-    }
-  </style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+
+  <nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-danger" href="#">Dribbble Clone</a>
+      <a class="navbar-brand fw-bold" href="#">Dribbble Clone</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,84 +51,78 @@ Publish the website in the LocalHost.
           <li class="nav-item"><a class="nav-link" href="#">Find Work</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Learn Design</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Go Pro</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+          <li class="nav-item">
+            <a class="btn btn-dark ms-2" href="#">Sign up</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="hero">
-    <h1>Discover the world’s top designers & creatives</h1>
-    <p class="lead">Dribbble is the leading destination to find and showcase creative work.</p>
-    <a href="#" class="btn btn-light mt-3">Explore Shots</a>
-  </section>
 
-  <section class="container my-5">
-    <h2 class="text-center mb-4 fw-bold">Popular Shots</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image a.jpg" class="card-img-top" alt="Design 1">
-          <div class="card-body">
-            <h5 class="card-title">Creative UI Concept</h5>
-            <p class="card-text">A modern and clean UI concept designed for inspiration.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image b.jpg" class="card-img-top" alt="Design 2">
-          <div class="card-body">
-            <h5 class="card-title">App Interface Design</h5>
-            <p class="card-text">Beautiful mobile app layout with smooth user experience.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image c.jpg" class="card-img-top" alt="Design 3">
-          <div class="card-body">
-            <h5 class="card-title">Website Illustration</h5>
-            <p class="card-text">Vibrant illustration styles for modern web projects.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image d.jpg" class="card-img-top" alt="Design 4">
-          <div class="card-body">
-            <h5 class="card-title">Poster Graphic Design</h5>
-            <p class="card-text">Bold colors and clean typography for impactful posters.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image e.jpg" class="card-img-top" alt="Design 5">
-          <div class="card-body">
-            <h5 class="card-title">Logo & Branding</h5>
-            <p class="card-text">Elegant and professional logo designs for modern brands.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm border-0">
-          <img src="image f.jpg" class="card-img-top" alt="Design 6">
-          <div class="card-body">
-            <h5 class="card-title">3D Art & Animation</h5>
-            <p class="card-text">Creative 3D design experiments and visual effects art.</p>
-          </div>
-        </div>
-      </div>
+  <section class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Discover the world’s top designers & creatives</h1>
+      <p class="lead">Dribbble is the leading destination to find & showcase creative work.</p>
+      <a href="#" class="btn btn-dark btn-lg mt-3">Get Started</a>
     </div>
   </section>
 
-  <footer>
-    <p>Designed by <strong>Madhumitha V(25016067)</strong> | © 2025 Dribbble Clone</p>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center fw-bold">Explore Shots</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image a.jpg" class="card-img-top" alt="Shot 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image b.jpg"card-img-top" alt="Shot 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image c.jpg" class="card-img-top" alt="Shot 3">
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image d.jpg" class="card-img-top" alt="Shot 4">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image e.jpg" class="card-img-top" alt="Shot 5">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image f.jpg" class="card-img-top" alt="Shot 6">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold">Join the world’s leading design community</h2>
+      <p class="lead mb-4">Sign up today and showcase your work to millions of creatives.</p>
+      <a href="#" class="btn btn-light btn-lg">Sign Up Free</a>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-light border-top text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 Dribbble Clone | Designed by <strong>Madhumitha V</strong></p>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 ```
 
